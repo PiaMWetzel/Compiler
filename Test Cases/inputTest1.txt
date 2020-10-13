@@ -1,0 +1,3 @@
+!This parses without errors!
+%%
+ while  (fahr < upper) do  a = 23.00; doend whileend  

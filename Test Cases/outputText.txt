@@ -1,0 +1,150 @@
+
+
+Token:	OPERATOR     Lexeme:	%%
+
+
+Token:	IDENTIFIER     Lexeme:	x
+	 <Start>-> <OptFunctionDefinitions><OptDeclarationList><StatementList>
+	 <OptFunctionDefinitions>-> <Function Definitions>|<Empty>
+	 <Empty> -> Epsilon
+	 <OptDeclarationList>-> <Declaration List>|<Empty>
+	 <Empty> -> Epsilon
+	 <StatementList>-> <Statement> <Statement List Prime>
+	 <Statement>-> <Compound>|<Assign>|<If>|<For>|<While>|<Input>|<Output>
+	 <Assign>-> <Identifier>=<Expression>;
+
+
+Token:	OPERATOR     Lexeme:	=
+
+
+Token:	IDENTIFIER     Lexeme:	a
+	 <Expression>-> <Term><ExpressionPrime>
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	OPERATOR     Lexeme:	+
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	b
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	SEPARATOR     Lexeme:	;
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+	 <Empty> -> Epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	z
+	 <StatementListPrime>-> <Statement List>|<Empty>
+	 <StatementList>-> <Statement> <Statement List Prime>
+	 <Statement>-> <Compound>|<Assign>|<If>|<For>|<While>|<Input>|<Output>
+	 <Assign>-> <Identifier>=<Expression>;
+
+
+Token:	OPERATOR     Lexeme:	=
+
+
+Token:	IDENTIFIER     Lexeme:	c
+	 <Expression>-> <Term><ExpressionPrime>
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	OPERATOR     Lexeme:	+
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	d
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	SEPARATOR     Lexeme:	;
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+	 <Empty> -> Epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	a
+	 <StatementListPrime>-> <Statement List>|<Empty>
+	 <StatementList>-> <Statement> <Statement List Prime>
+	 <Statement>-> <Compound>|<Assign>|<If>|<For>|<While>|<Input>|<Output>
+	 <Assign>-> <Identifier>=<Expression>;
+
+
+Token:	OPERATOR     Lexeme:	=
+
+
+Token:	IDENTIFIER     Lexeme:	e
+	 <Expression>-> <Term><ExpressionPrime>
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	OPERATOR     Lexeme:	-
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	f
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	SEPARATOR     Lexeme:	;
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+	 <Empty> -> Epsilon
+
+
+Token:	IDENTIFIER     Lexeme:	b
+	 <StatementListPrime>-> <Statement List>|<Empty>
+	 <StatementList>-> <Statement> <Statement List Prime>
+	 <Statement>-> <Compound>|<Assign>|<If>|<For>|<While>|<Input>|<Output>
+	 <Assign>-> <Identifier>=<Expression>;
+
+
+Token:	OPERATOR     Lexeme:	=
+
+
+Token:	IDENTIFIER     Lexeme:	g
+	 <Expression>-> <Term><ExpressionPrime>
+	 <Term>-> <Factor><TermPrime>
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	OPERATOR     Lexeme:	*
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+
+
+Token:	IDENTIFIER     Lexeme:	n
+	 <Factor>-> -<Primary>|<Primary>
+	 <Primary>-> IDENTIFIER|DECIMAL|IDENTIFIER[<IDs>]|(<Expression>)|REAL|true|false
+
+
+Token:	SEPARATOR     Lexeme:	;
+	 <TermPrime>-> *<Factor><TermPrime>|/ <Factor><TermPrime>|e
+	 <Empty> -> Epsilon
+	 <ExpressionPrime>-> +<Term><ExpressionPrime>|- <Term><ExpressionPrime>|epsilon
+	 <Empty> -> Epsilon
+
+	 Parsed without errors

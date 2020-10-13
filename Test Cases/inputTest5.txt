@@ -1,0 +1,13 @@
+!This parses without error!
+
+! this is comment for this sample test code the %% is optional to start!
+
+ 
+
+
+%%
+
+x=a + b;
+z=c+ d;
+a=e-f;
+b=g*n;

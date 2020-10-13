@@ -1,0 +1,16 @@
+ ! Find largest value between two numbers!
+
+ !This parses without error! 
+
+int num1, num2, large$;
+if(num1 > num2)
+then
+	large = num1$;
+
+else
+then
+
+	large = num2$;
+endif
+
+

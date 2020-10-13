@@ -1,0 +1,12 @@
+
+!This has an error - token $Hello is invalid (and 5Hello) !
+
+!Test Comment!
+$Hello
+5Hello
+!other comment !
+int number;
+
+number = 8 + 4;
+
+output(number);

@@ -1,0 +1,15 @@
+
+!this parses without errors!
+
+
+for(a = 3; a < b; b = b + 1;)
+if(a and b)
+then
+g = c + d;
+else
+then
+f = j + 6;
+endif
+forend
+
+
